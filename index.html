@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Login</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="nextpage.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <img src="img/image 2.png" alt="" class="logo">
+                <div class="lang">
+                    <img src="img/Vector.png" alt="">
+                    <h2>O’zb</h2>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main-content">
+        <div class="login-card">
+            <nav class="nav">
+                <img src="img/image 2.png" alt="" class="logo">
+                <div class="lang">
+                    <h2>Offerta imzolash</h2>
+                    <img src="img/Vector 2.png" alt="">
+                </div>
+            </nav>
+            <h1 class="welcome-text">Spacega xush kelibsiz</h1>
+            <div class="toggle-container">
+                <div class="toggle-option active">O’quvchiman</div>
+                <div class="toggle-option inactive">Ota-onaman</div>
+            </div>
+            <form id="login-form">
+                <input id="input" type="text" placeholder="Modme Id or Phone number" class="input-field">
+                <input id="password" type="password" placeholder="Password "class="input-field">
+                <span class="toggle-password" id="togglePassword">👁</span>
+                <p class="error" id="errorMessage"></p>
+                <p class="qr" id="qr-code-link" style="cursor: pointer; color: blue;">QR code orqali kirish</p>
+                    <div id="qr-code-modal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border: 1px solid #ccc;">
+                        <img src="img/Untitled.png" alt="QR Code" style="width: 200px; height: 200px;">
+                        <button id="close-modal">Yopish</button>
+                    </div>
+
+                <button id="submit-btn" type="submit" class="submit-btn" disabled>Подтвердить</button>
+            </form>
+        </div>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
